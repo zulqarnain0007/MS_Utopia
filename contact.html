@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact MS Utopia - 8 divisional offices across Bangladesh">
+    <title>Contact Us | যোগাযোগ | মহাসাফল্য ইউটোপিয়া</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+        .contact-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 30px; margin-top: 40px; }
+        .contact-form { background: var(--glass-bg); padding: 40px; border-radius: var(--radius-lg); box-shadow: var(--shadow); }
+        .form-group { margin-bottom: 25px; }
+        .form-group label { display: block; margin-bottom: 8px; font-weight: 600; color: var(--primary-green); }
+        .form-group input, .form-group textarea { width: 100%; padding: 15px; border: 2px solid var(--border-color); border-radius: 12px; font-family: inherit; font-size: 16px; transition: var(--transition); }
+        .form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--accent-gold); box-shadow: 0 0 0 4px rgba(249, 168, 37, 0.1); }
+        .form-group textarea { min-height: 150px; resize: vertical; }
+        .contact-info-card { background: var(--glass-bg); padding: 40px; border-radius: var(--radius-lg); box-shadow: var(--shadow); }
+        .contact-info-item { display: flex; align-items: flex-start; gap: 15px; margin-bottom: 25px; padding: 20px; background: var(--light-green); border-radius: 12px; }
+        .contact-info-item .icon { font-size: 24px; }
+        .contact-info-item h4 { color: var(--primary-green); margin-bottom: 5px; }
+        .contact-info-item p { color: var(--gray-text); font-size: 0.95rem; }
+        .social-links { display: flex; gap: 15px; margin-top: 30px; }
+        .social-links a { width: 50px; height: 50px; background: linear-gradient(135deg, var(--primary-green), var(--secondary-green)); color: white; display: flex; align-items: center; justify-content: center; border-radius: 50%; text-decoration: none; font-size: 20px; transition: var(--transition); }
+        .social-links a:hover { transform: translateY(-5px); box-shadow: 0 8px 20px rgba(27, 94, 32, 0.3); }
+    </style>
+</head>
+<body class="lang-bn">
+    <div class="lang-switcher">
+        <button data-lang="en" class="">EN</button>
+        <button data-lang="bn" class="active">বাংলা</button>
+    </div>
+
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="../index.html" class="logo">
+                <div class="logo-icon">MS</div>
+                <div class="logo-text">Mahasafol <span>Utopia</span></div>
+            </a>
+            <ul class="nav-links">
+                <li><a href="../index.html" data-key="nav_home">হোম</a></li>
+                <li><a href="../index.html#mission" data-key="nav_mission">আমাদের লক্ষ্য</a></li>
+                <li><a href="../index.html#locations" data-key="nav_locations">অফিসসমূহ</a></li>
+                <li><a href="store.html" data-key="nav_store">স্টোর</a></li>
+                <li><a href="contact.html" data-key="nav_contact" class="active">যোগাযোগ</a></li>
+            </ul>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </nav>
+
+    <section class="hero" style="min-height: 50vh; padding-top: 150px;">
+        <div class="hero-content">
+            <span class="hero-badge">যোগাযোগ করুন</span>
+            <h1>আমাদের সাথে যোগাযোগ করুন</h1>
+            <p>যেকোনো প্রশ্ন, পরামর্শ বা অর্ডারের জন্য আমাদের সাথে যোগাযোগ করুন</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="contact-grid">
+            <div class="contact-form">
+                <h3 style="margin-bottom: 30px; color: var(--primary-green);">📧 মেসেজ পাঠান</h3>
+                <form id="contactForm" action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">আপনার নাম *</label>
+                        <input type="text" id="name" name="name" required placeholder="আপনার পূর্ণ নাম">
+                    </div>
+                    <div class="form-group">
+                        <label for="email">ইমেইল *</label>
+                        <input type="email" id="email" name="email" required placeholder="example@email.com">
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">ফোন নম্বর</label>
+                        <input type="tel" id="phone" name="phone" placeholder="+880 1XXX XXXXXX">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">বার্তা *</label>
+                        <textarea id="message" name="message" required placeholder="আপনার বার্তা লিখুন..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width: 100%;">পাঠান →</button>
+                </form>
+            </div>
+
+            <div class="contact-info-card">
+                <h3 style="margin-bottom: 30px; color: var(--primary-green);">📞 যোগাযোগের তথ্য</h3>
+
+                <div class="contact-info-item">
+                    <div class="icon">📧</div>
+                    <div>
+                        <h4>ইমেইল</h4>
+                        <p>info@mahasafolutopia.com</p>
+                        <p>support@mahasafolutopia.com</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="icon">📱</div>
+                    <div>
+                        <h4>হটলাইন</h4>
+                        <p>শীঘ্রই আসছে</p>
+                        <p>সকাল ৯টা - রাত ৯টা</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="icon">🏢</div>
+                    <div>
+                        <h4>হেড অফিস</h4>
+                        <p>ডিসেন্ট এপার্টমেন্ট, বাড়ি নং: ৪৭৩</p>
+                        <p>বারিধারা ডিওএইচএস, ঢাকা-১২০৬</p>
+                    </div>
+                </div>
+
+                <div class="contact-info-item">
+                    <div class="icon">🌐</div>
+                    <div>
+                        <h4>সোশ্যাল মিডিয়া</h4>
+                        <p>আমাদের সোশ্যাল মিডিয়ায় ফলো করুন</p>
+                    </div>
+                </div>
+
+                <div class="social-links">
+                    <a href="#" title="Facebook">📘</a>
+                    <a href="#" title="Instagram">📷</a>
+                    <a href="#" title="YouTube">▶️</a>
+                    <a href="#" title="WhatsApp">💬</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>মহাসাফল্য ইউটোপিয়া সম্পর্কে</h3>
+                <p>মহাসাফল্য ইউটোপিয়া বাংলাদেশের খাদ্য ব্যবস্থাকে সম্পূর্ণ অর্গানিক, সাশ্রয়ী মূল্যে এবং সবার জন্য সহজলভ্য করতে প্রতিশ্রুতিবদ্ধ।</p>
+            </div>
+            <div class="footer-section">
+                <h3>দ্রুত লিংক</h3>
+                <p><a href="../index.html">হোম</a></p>
+                <p><a href="../index.html#mission">আমাদের লক্ষ্য</a></p>
+                <p><a href="store.html">স্টোর</a></p>
+                <p><a href="contact.html">যোগাযোগ</a></p>
+            </div>
+            <div class="footer-section">
+                <h3>যোগাযোগ করুন</h3>
+                <p>📧 info@mahasafolutopia.com</p>
+                <p>🌐 www.mahasafolutopia.com</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© ২০২৬ মহাসাফল্য ইউটোপিয়া। সর্বস্বত্ব সংরক্ষিত।</p>
+        </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+    <script>
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('ধন্যবাদ! আপনার বার্তা পাঠানো হয়েছে। শীঘ্রই আমরা আপনার সাথে যোগাযোগ করব।');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
